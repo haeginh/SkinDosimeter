@@ -1,0 +1,19 @@
+# Example macro file to run in the batch mode
+
+# Set the verbose
+/run/verbose 1
+
+# Set the number of threads for multi-threading mode
+/run/numberOfThreads  2
+
+# Initialize
+/run/initialize
+
+# Source setting
+#/control/execute source.mac
+/gun/particle gamma
+/gun/energy 10 MeV
+/external/dir AP
+
+# Set the nps
+/run/beamOn 10000000
